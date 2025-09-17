@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 100%;
+        height: 15px;
+        display: flex;
+      }
+      .child1 {
+        width: 50%;
+        height: 100%;
+        background-color: red;
+      }
+      .child2 {
+        width: 50%;
+        height: 100%;
+        background-color: blue;
+      }
+
+      .ninety-10 {
+        width: 100%;
+        height: 15px;
+        display: flex;
+      }
+      .ninety-10 .child1 {
+        width: 95%;
+        height: 100%;
+        background-color: green;
+      }
+      .ninety-10 .child2 {
+        width: 5%;
+        height: 100%;
+        background-color: blue;
+      }
+      .ten-eighty {
+        width: 100%;
+        height: 15px;
+        display: flex;
+      }
+      .ten-eighty .child1 {
+        width: 5%;
+        height: 100%;
+        background-color: red;
+      }
+      .ten-eighty .child2 {
+        width: 90%;
+        height: 100%;
+        background-color: green;
+      }
+      .ten-eighty .child3 {
+        width: 5%;
+        height: 100%;
+        background-color: blue;
+      }
+      .ninety-10 #ninetyc1 {
+        width: 95%;
+        height: 100%;
+        background-color: red;
+      }
+      .ninety-10 #ninetyc2 {
+        width: 5%;
+        height: 100%;
+        background-color: blue;
+      }
+      .parent-container-justify {
+        width: 100%;
+        height: 20px;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .parent-container-justify .child {
+        width: 15px;
+        height: 15px;
+        background-color: red;
+      }
+      .four {
+        width: 100%;
+        height: 50px;
+      }
+      .four .red {
+        width: 5%;
+        height: 100%;
+        background-color: red;
+      }
+      .four .blue {
+        width: 95%;
+        height: 100%;
+        background-color: blue;
+      }
+      .parent-five {
+        display: flex;
+        justify-content: space-between;
+      }
+      .five-children {
+        width: 50px;
+        height: 100%;
+        background-color: yellow;
+      }
+      .parent-nine {
+        display: flex;
+        justify-content: space-between;
+      }
+      .child-nine {
+        width: 140px;
+        height: 100%;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>Row 1</p>
+      <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+      </div>
+    </section>
+    <section>
+      <p>Row 2</p>
+      <div class="ninety-10">
+        <div class="child1"></div>
+        <div class="child2"></div>
+      </div>
+    </section>
+    <section>
+      <p>Row 3</p>
+      <div class="ten-eighty">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+      </div>
+    </section>
+    <section>
+      <p>Row 4</p>
+      <div class="ninety-10">
+        <div class="child1" id="ninetyc1"></div>
+        <div class="child2" id="ninetyc2"></div>
+      </div>
+    </section>
+    <section>
+      <p>Row 5</p>
+      <div class="parent-container-justify">
+        <div class="child"></div>
+      </div>
+    </section>
+    <section>
+      <p>Row 6</p>
+      <div style="background-color: red" class="parent-container-justify">
+        <div
+          style="background-color: blue; height: 100%; width: 5%"
+          class="child"
+        ></div>
+      </div>
+    </section>
+    <section class="four">
+      <p>Row 7</p>
+      <div class="parent" style="height: 30px">
+        <div class="red"></div>
+        <div class="blue">
+          <div
+            style="background-color: green; height: 5px; margin-top: 12px"
+            class="green"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <p>Row 8</p>
+      <div
+        style="height: 30px; width: 100%; background-color: green"
+        class="parent-five"
+      >
+        <div class="five-children"></div>
+        <div class="five-children"></div>
+        <div class="five-children"></div>
+        <div class="five-children"></div>
+        <div class="five-children"></div>
+      </div>
+    </section>
+    <section>
+      <p>Row 9</p>
+      <div
+        style="height: 40px; width: 100%; background-color: green"
+        class="parent-nine"
+      >
+        <div class="child-nine"></div>
+        <div class="child-nine"></div>
+        <div class="child-nine"></div>
+        <div class="child-nine"></div>
+        <div class="child-nine"></div>
+      </div>
+    </section>
+  </body>
+</html>
