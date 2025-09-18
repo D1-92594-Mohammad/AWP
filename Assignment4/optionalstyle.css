@@ -1,0 +1,168 @@
+nav {
+  padding: 40px;
+}
+
+.nav-icons {
+  margin-right: 100px;
+
+  button {
+    margin: 10px;
+  }
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(205, 205, 236);
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  height: 700px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-top: 20px;
+
+  .related-items {
+    width: 80%;
+
+    .related-items-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .related-items-content {
+      display: flex;
+      flex-direction: column;
+      line-height: 10px;
+    }
+  }
+
+  .brands {
+    width: 80%;
+
+    .brand-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .price {
+    width: 80%;
+
+    .price-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .price-content {
+    display: flex;
+    /* width: 20px; */
+    justify-content: space-between;
+  }
+
+  .price-min input {
+    width: 50px;
+  }
+
+  .size {
+    width: 80%;
+
+    .size-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .size-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      button {
+        margin: 5px;
+      }
+    }
+  }
+
+  .rating {
+    width: 80%;
+
+    .rating-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.brand-content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 4px;
+}
+
+.right {
+  width: 70%;
+
+  .right-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .right-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div,
+      svg {
+        margin: 10px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.product {
+  display: flex;
+}
+
+footer {
+  width: 100%;
+
+  display: flex;
+  padding: 30px 30px;
+
+  .footer-left {
+    font-size: 30px;
+    line-height: 20px;
+    width: 20%;
+  }
+
+  .footer-right {
+    display: flex;
+    width: 80%;
+    line-height: 11px;
+
+    .store {
+      margin-right: 200px;
+    }
+
+    .store p {
+      width: 150px;
+    }
+  }
+}
