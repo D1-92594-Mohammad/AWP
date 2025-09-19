@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello ji</h1>
+
+    <script>
+      let num1 = parseInt(window.prompt("Enter first number: "));
+      if (num1 > 0) {
+        let num2 = parseInt(window.prompt("Enter second number: "));
+        if (num2 > 0) {
+          let num3 = parseInt(window.prompt("Enter third number: "));
+          if (num3 > 0) {
+            const res = Math.max(num1, num2, num3);
+            window.alert(`Biggest number: ${res}`);
+          } else {
+            window.alert("Enter valid positive number 3");
+          }
+        } else {
+          window.alert("Enter valid positive number 2");
+        }
+      } else {
+        window.alert("Enter valid positive number");
+      }
+    </script>
+  </body>
+</html>
