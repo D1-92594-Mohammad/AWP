@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="q2style.css" />
+  </head>
+  <body>
+    <section>
+      <h3>
+        <b><u>Calculator</u></b>
+      </h3>
+      <div class="calculator-container">
+        <form>
+          <table>
+            <tr>
+              <td>Enter Number 1:</td>
+              <td><input id="num1" type="number" /></td>
+            </tr>
+            <tr>
+              <td>Enter Number 2:</td>
+              <td><input id="num2" type="number" /></td>
+            </tr>
+            <tr>
+              <td>Result</td>
+              <td><div id="result"></div></td>
+            </tr>
+            <tr class="buttons">
+              <td>
+                <button type="button" onclick="AddNum()">Add</button>
+                <button type="button" onclick="SubNum()">Substract</button>
+              </td>
+              <td>
+                <button type="button" onclick="MulNum()">Multiply</button>
+                <button type="button" onclick="DivNum()">Divide</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const result = document.getElementById("result");
+      function AddNum() {
+        const num1 = Number(document.getElementById("num1").value);
+        const num2 = Number(document.getElementById("num2").value);
+        result.innerText = num1 + num2;
+      }
+      function SubNum() {
+        const num1 = Number(document.getElementById("num1").value);
+        const num2 = Number(document.getElementById("num2").value);
+        result.innerText = num1 - num2;
+      }
+      function MulNum() {
+        const num1 = Number(document.getElementById("num1").value);
+        const num2 = Number(document.getElementById("num2").value);
+        result.innerText = num1 * num2;
+      }
+      function DivNum() {
+        const num1 = Number(document.getElementById("num1").value);
+        const num2 = Number(document.getElementById("num2").value);
+        result.innerText = num1 / num2;
+      }
+    </script>
+  </body>
+</html>
