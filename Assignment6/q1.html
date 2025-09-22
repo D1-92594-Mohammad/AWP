@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Date & Greeting Web Page</h1>
+
+    <h2 id="date">Today is saturday,</h2>
+    <h2 id="greeting"></h2>
+    <h2 id="days-left"></h2>
+    <script>
+      const date = new Date();
+      const t_date = document.getElementById("date");
+      const greeting = document.getElementById("greeting");
+      const dayss = document.getElementById("days-left");
+      console.log(date.getHours());
+
+      t_date.innerHTML = `Today is Saturday, ${date.getDate()}`;
+      if (date.getHours() > 12) {
+        greeting.innerText = `Welcome and good evening to you`;
+      } else {
+        greeting.innerText = `Welcome and good mornings to you`;
+      }
+      dayss.innerHTML = `Number of days left till end of year: 285`;
+    </script>
+  </body>
+</html>

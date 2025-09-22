@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Enter Employee Names</h1>
+      <div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Name"
+          id="ename"
+        />
+        <button
+          onclick="addEmp()"
+          id="id_add"
+          type="button"
+          class="btn btn-outline-primary m-3"
+        >
+          Add Name
+        </button>
+        <button
+          onclick="displayEmp()"
+          id="id_display"
+          type="button"
+          class="btn btn-outline-primary m-3"
+        >
+          Sort & display
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <h1>Sorted Employee Names:</h1>
+      <ul id="list"></ul>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const list = document.getElementById("list");
+      let empArray = [];
+
+      function addEmp() {
+        const ename = String(document.getElementById("ename").value);
+        if (empArray.length < 6) {
+          empArray.push(ename);
+          document.getElementById("ename").value = " ";
+        } else {
+          window.alert("Limit exceeded");
+        }
+      }
+
+      function displayEmp() {
+        empArray.sort();
+        for (i = 0; i < empArray.length; i++) {
+          const li = `<li>${empArray[i]}</li>`;
+          list.innerHTML += li;
+        }
+      }
+    </script>
+  </body>
+</html>
